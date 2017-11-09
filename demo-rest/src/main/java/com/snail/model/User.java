@@ -2,8 +2,6 @@ package com.snail.model;
 
 import java.io.Serializable;
 
-
-
 /**
  *
  * @author snail
@@ -11,19 +9,18 @@ import java.io.Serializable;
  *
  */
 
+public class User implements Serializable {
 
-public class User implements Serializable{
-	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
 	private Long id;
-	
-    private String name;
-	
-    private Integer age;
+
+	private String name;
+
+	private Integer age;
 
 	public Long getId() {
 		return id;
@@ -52,8 +49,5 @@ public class User implements Serializable{
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-    
-    
-    
-	
+
 }

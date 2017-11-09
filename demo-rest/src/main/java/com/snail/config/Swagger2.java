@@ -19,25 +19,17 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class Swagger2 {
 
-    @Bean
-    public Docket createRestApi() {
-        return new Docket(DocumentationType.SWAGGER_2)
-                .apiInfo(apiInfo())
-                .select()
-                .apis(RequestHandlerSelectors.basePackage("com.snail.controller"))
-                .paths(PathSelectors.any())
-                .build();
-    }
+	@Bean
+	public Docket createRestApi() {
+		return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select()
+				.apis(RequestHandlerSelectors.basePackage("com.snail.controller")) // .apis(RequestHandlerSelectors.any())
+				.paths(PathSelectors.any()).build();
+	}
 
-    private ApiInfo apiInfo() {
-    	
-        return new ApiInfoBuilder()
-                .title("Spring Boot中使用Swagger2构建RESTful APIs")
-                .description("更多Spring Boot相关文章请关注：")
-                .termsOfServiceUrl("")
-                .contact("snail")
-                .version("1.0")
-                .build();
-    }
+	private ApiInfo apiInfo() {
+
+		return new ApiInfoBuilder().title("Spring Boot中使用Swagger2构建RESTful APIs").description("Spring Boot 从零开始")
+				.termsOfServiceUrl("").contact("snail").version("1.0").build();
+	}
 
 }

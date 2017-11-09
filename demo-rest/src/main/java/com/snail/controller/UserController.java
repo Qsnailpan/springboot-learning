@@ -19,8 +19,10 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 
 /**
+ *
  * @author snail
  * @version 1.0.0
+ *
  */
 @Api(value = "/users", description = "用户接口")
 @RestController
@@ -46,6 +48,16 @@ public class UserController {
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public User getUser(@ApiParam(value = "用户ID", required = true) @PathVariable Long id) {
 		return users.get(id);
+	}
+
+	@ApiOperation(value = "更新用户详细信息", notes = "根据url的id来指定更新对象，并根据传过来的user信息来更新用户详细信息")
+	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
+	public User putUser(@ApiParam(value = "用户ID", required = true) @PathVariable Long id,
+			@ApiParam(value = "用户模型数据", required = true) @RequestBody User user) {
+		User u = users.get(id);
+		u.setName(user.getName());
+		u.setAge(user.getAge());
+		return u;
 	}
 
 	@ApiOperation(value = "删除用户", notes = "根据url的id来指定删除对象")
