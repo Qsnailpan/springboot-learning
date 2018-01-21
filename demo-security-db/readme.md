@@ -6,7 +6,7 @@
 
 Github 地址
 ---
-https://github.com/Qsnailpan/springboot-learn/tree/master/demo-security-login-db
+https://github.com/Qsnailpan/springboot-learn/tree/master/demo-security-db
 
 启动应用
 -----
