@@ -1,10 +1,18 @@
-前言
------
-Spring Security 比较复杂，尤其看资料的时候感觉挺懵的。这里基于demo学习
-
+官方文档
+------
+https://springcloud.cc/spring-security-zhcn.html#tech-intro-web-authentication
 Github 地址
 -----
 https://github.com/Qsnailpan/springboot-learn/tree/master/demo-security-login
+
+-----
+Spring Security 比较复杂，尤其看资料的时候感觉挺懵的。这里基于demo一步步学习。
+简介
+---
+
+#### Spring Security是什么?
+Spring Security 提供了基于javaEE的企业软件全面的`安全服务`。
+
 
 启动应用
 -----
