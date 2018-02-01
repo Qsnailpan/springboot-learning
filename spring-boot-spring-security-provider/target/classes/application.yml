@@ -1,0 +1,29 @@
+server:
+  port: 8080
+  session:
+    timeout: 30
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+  thymeleaf:
+    cache: false
+
+
+logging:
+  level:
+    ROOT: info
+    org.springframework: info
+    org.springframework.security: info
+    org.springframework.data: info
+    com.snail: info
+  #file: /Users/lipan/application.log
