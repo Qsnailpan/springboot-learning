@@ -1,18 +1,12 @@
 package com.snail.model;
 
 import java.io.Serializable;
-import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -21,7 +15,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity(name = "bf_user_")
+@Entity(name = "user_")
 public class User implements Serializable {
 	private static final long serialVersionUID = 9058110335651086815L;
 	@Id
