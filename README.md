@@ -14,6 +14,7 @@ mybatis-annotation:  https://github.com/Qsnailpan/springboot-learn/tree/master/d
 ### 模板引擎
 freemarker:  https://github.com/Qsnailpan/springboot-learn/tree/master/demo-freemarker
 thymeleaf:  https://github.com/Qsnailpan/springboot-learn/tree/master/spring-boot-web-thymeleaf
+
 ### cache
 ehcache:  https://github.com/Qsnailpan/springboot-learn/tree/master/demo-EhCache
 redis	:  https://github.com/Qsnailpan/springboot-learn/tree/master/demo-redis
@@ -26,14 +27,14 @@ boot-amq-producer:  https://github.com/Qsnailpan/springboot-learn/tree/master/sp
 
 ### other
 异步调用:  https://github.com/Qsnailpan/springboot-learn/tree/master/demo-async
-个性地址banner:  https://github.com/Qsnailpan/springboot-learn/tree/master/demo-banner
+个性订制banner:  https://github.com/Qsnailpan/springboot-learn/tree/master/demo-banner
 定时任务:  https://github.com/Qsnailpan/springboot-learn/tree/master/demo-schedule
 	
 ### spring-security（整合）
 thymeleaf:    https://github.com/Qsnailpan/springboot-learn/tree/master/spring-boot-spring-security-thymeleaf
 log:  https://github.com/Qsnailpan/springboot-learn/tree/master/spring-boot-spring-security-log
 thymeleaf + bcrypt（密码加密算法）:   https://github.com/Qsnailpan/springboot-learn/tree/master/spring-boot-spring-security-thymeleaf-bcrypt
-自定义provider 认证:  https://github.com/Qsnailpan/springboot-learn/tree/master/spring-boot-spring-security-provider
+自定义provider 认证: https://github.com/Qsnailpan/springboot-learn/tree/master/spring-boot-spring-security-provider
 
 
 	
