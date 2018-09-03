@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xmlns='http://www.ehcache.org/v3'
+	xmlns:jsr107='http://www.ehcache.org/v3/jsr107'
+	xsi:schemaLocation="
+        http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core-3.0.xsd
+        http://www.ehcache.org/v3/jsr107 http://www.ehcache.org/schema/ehcache-107-ext-3.0.xsd">
+
+	<service>
+		<jsr107:defaults default-template="default"></jsr107:defaults>
+	</service>
+
+	<!-- 默认缓存策略 ： 缓存过期时间-30分钟 ，最大缓存-50 MB -->
+
+	<cache-template name="default">
+		<expiry>
+			<ttl unit="minutes">30</ttl>
+		</expiry>
+		<heap unit="MB">50</heap>
+	</cache-template>
+
+</config>
